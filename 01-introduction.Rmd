@@ -1,3 +1,11 @@
+---
+knit: "bookdown::preview_chapter"
+---
+
+```{r, echo=FALSE}
+rm(list=ls())
+```
+
 # Introduction {#introduction}
 
 This chapter introduces the book. It describes the wide range of people it was written for, in terms of R and programming experience, and how you can get the most out of it. Anyone setting out to improve efficiency should have an understanding of precisely what they mean by the term, and this is discussed, with reference to *algorithmic* and *programmer* efficiency in Section \@ref(what-is-efficiency), and with reference to R in particular in \@ref(what-is-efficient-r-programming). It may seem obvious, but it's also worth thinking about *why* anyone would bother with efficient code now that powerful computers are cheap and accessible. This is covered in Section \@ref(why-efficiency).
@@ -6,7 +14,7 @@ This book happily is not completely R-specific. Non R programming skills that ar
 
 ### Prerequisites {-}
 
-As emphasised in the next secttion, it's useful to run code and experiment as you read. Therefore it's worth checking that you have installed the necessary packages needed to run all the code in each chapter at the outset, so you don't get disrupted by unmet dependencies. For this reason a short Prerequisites section is provided at the outset of each chapter. The prerequisites for this chapter are:
+As emphasised in the next secttion, it's useful to run code and experiment as you read. This *Prerequisites* section ensures you have the necessary packages for each chapter. The prerequisites for this chapter are:
 
 - A working installation of R on your computer (see Section \@ref(install-rstudio)).
 
@@ -91,7 +99,7 @@ There are many concepts and skills that are language agnostic. Much of knowledge
 
 ## Cross-transferable skills for efficiency
 
-The meaning of 'efficient R code', as opposed to generic 'efficient code', should be clear from for the preceding two sections. However, that does not mean that the skills and concepts covered in this book are not transferable to other languages and non-programming tasks. Likewise working on these *cross-tranferable* skills will improve your R programming (as well as other aspects of your working life). Two of these skills are especially important: touch typing and use of a consistent style.
+The meaning of 'efficient R code', as opposed to generic 'efficient code', should be clear from for the preceding two sections. However, that does not mean that the skills and concepts covered in this book are not transferable to other languages and non-programming tasks. Likewise working on these *cross-transferable* skills will improve your R programming (as well as other aspects of your working life). Two of these skills are especially important: touch typing and use of a consistent style.
 
 ### Touch typing
 
@@ -298,6 +306,6 @@ devtools::install_github("csgillespie/efficientR")
 We are grateful to O'Reilly Press for allowing us to develop this book [online](https://csgillespie.github.io/efficientR/).
 The online version constitutes a substantial additional resource to supplement this book,
 and will continue to evolve in between reprints of the physical book. 
-The book's code also represents a substantial learning opportunity in itself as it was written using Rmarkdown and the **bookdown** package, allowing us to run the R code each time we compile the book to ensure that it works, and allowing others to contribute to its future longevity.
+The book's code also represents a substantial learning opportunity in itself as it was written using R Markdown and the **bookdown** package, allowing us to run the R code each time we compile the book to ensure that it works, and allowing others to contribute to its future longevity.
 To edit this chapter, for example, simply navigate to [github.com/csgillespie/efficientR/edit/master/01-introduction.Rmd](https://github.com/csgillespie/efficientR/edit/master/01-introduction.Rmd) while logged into a [GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/).
 The full source of the book is available at [https://github.com/csgillespie/efficientR](https://github.com/csgillespie/efficientR) where we welcome comments/questions on the [Issue Tracker](https://github.com/csgillespie/efficientR/issues) and Pull Requests.
